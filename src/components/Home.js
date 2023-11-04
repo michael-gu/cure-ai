@@ -21,9 +21,16 @@ const HomePage = () => {
                     </Link>
                 </Box>
                 <Box margin={1}>
-                    <Link to="/cureai" style={{ textDecoration: 'none' }}>
+                    <Link to="/cure-ai" style={{ textDecoration: 'none' }}>
                     <Button variant='contained' color='secondary'>
-                        <Typography color={'white'}>Try CureAI</Typography>
+                        <Typography color={'white'}>CURE AI</Typography>
+                    </Button>
+                    </Link>
+                </Box>
+                <Box margin={1}>
+                    <Link to="/diagnosis-page" style={{ textDecoration: 'none' }}>
+                    <Button variant='contained' color='secondary'>
+                        <Typography color={'white'}>Diagnose</Typography>
                     </Button>
                     </Link>
                 </Box>

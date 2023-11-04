@@ -6,7 +6,7 @@ import theme from '../Themes/customTheme';
 import { Link } from 'react-router-dom'
 
 const CureAIApp = () => {
-    const [messages, setMessages] = useState([]);
+    const [messages, setMessages] = useState([{text: "Welcome to CureAI - I am Curie, your AI health assistant.", sender: "CureAI"}]);
     const [inputValue, setInputValue] = useState('');
   
     const handleInputChange = (e) => {
@@ -48,12 +48,19 @@ const CureAIApp = () => {
                 </Link>
               </Box>
               <Box margin={1}>
-                <Link to="/cureai" style={{ textDecoration: 'none' }}>
+                <Link to="/cure-ai" style={{ textDecoration: 'none' }}>
                   <Button variant='contained' color='secondary'>
-                    <Typography color={'white'}>Try CureAI</Typography>
+                    <Typography color={'white'}>CURE AI</Typography>
                   </Button>
                 </Link>
               </Box>
+              <Box margin={1}>
+                    <Link to="/diagnosis-page" style={{ textDecoration: 'none' }}>
+                    <Button variant='contained' color='secondary'>
+                        <Typography color={'white'}>Diagnose</Typography>
+                    </Button>
+                    </Link>
+                </Box>
             </Toolbar>
           </AppBar>
           <div className='try-content'>
@@ -90,12 +97,12 @@ const CureAIApp = () => {
                 <li><Typography variant="h8">Suggest possible diagnoses based on your symptoms</Typography></li>
                 <li><Typography variant="h8">Provide general medical advice</Typography></li>
               </ul>
-              <Typography variant="h7" fontWeight={'bold'} gutterBottom>NOTE: CureAI is not licensed to give definitive information. For conclusive advice, 
-              please consult a qualified healthcare professional for any medical concerns or questions you may have</Typography>
+              <Typography variant="h7" fontWeight={'bold'} gutterBottom>
+                NOTE: CureAI is not licensed to give definitive information. For conclusive advice, 
+                please consult a qualified healthcare professional for any medical concerns or questions you may have
+              </Typography>
             </div>
           </div>
-          
-
         </div> 
       </ThemeProvider>
     );
