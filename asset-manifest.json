@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cure-ai/static/css/main.404cf782.css",
+    "main.js": "/cure-ai/static/js/main.47ad0507.js",
+    "static/js/787.62b4143e.chunk.js": "/cure-ai/static/js/787.62b4143e.chunk.js",
+    "index.html": "/cure-ai/index.html",
+    "main.404cf782.css.map": "/cure-ai/static/css/main.404cf782.css.map",
+    "main.47ad0507.js.map": "/cure-ai/static/js/main.47ad0507.js.map",
+    "787.62b4143e.chunk.js.map": "/cure-ai/static/js/787.62b4143e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.404cf782.css",
+    "static/js/main.47ad0507.js"
+  ]
+}
