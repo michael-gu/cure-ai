@@ -1,0 +1,25 @@
+.team-card {
+    transition: transform 1s;
+}
+  
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+.page-content {
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.content-box {
+    /* border: 1px solid black; */
+    color: #00355e;
+    padding: 10px 20px;
+    margin: 10px;
+    text-align: left;
+}
+
+.page {
+    margin-top: 60px;
+    background-color: aliceblue;
+}
