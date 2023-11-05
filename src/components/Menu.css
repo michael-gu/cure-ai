@@ -1,0 +1,40 @@
+.menu {
+    min-height: 80px;
+    height: 8%;
+}
+
+.toolbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 100%;
+}
+
+.menu-title {
+    margin-left: 8px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    color: white;
+    opacity: 0.9;
+    min-width: 70px;
+}
+
+.menu-button-container {
+    margin-left: 8px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    color: white;
+    opacity: 0.9;
+    min-width: 80px;
+}
+
+.footer {
+    /* background-color: #343a40; */
+    height: 10%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}

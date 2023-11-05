@@ -1,0 +1,11 @@
+.custom-text-field .MuiInputLabel-root {
+    font-size: 30px; /* Adjust label font size */
+}
+  
+.custom-text-field .MuiInputBase-root {
+    font-size: 30px; /* Adjust input text font size */
+}
+  
+.custom-text-field .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-width: 2px; /* Adjust border width */
+}

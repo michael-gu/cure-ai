@@ -1,43 +1,21 @@
-import React, { useState } from 'react';
-import { AppBar, Box, Button, Toolbar, Typography, Grid, Card, Container, CardMedia, CardContent} from '@mui/material';
+import React from 'react';
+import { Typography, Grid, Card, Container, CardMedia, CardContent} from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../Themes/customTheme';
-import { Link } from 'react-router-dom'
 import './Home.css';
+import './Menu.css';
+import pfp from './images/pfp.jpg'
+import veloxLogo from './images/velox_logo.png'
+import trailblazerLogo from './images/trailblazer_logo.PNG'
+import { menu, footer } from './elements'
 
 const HomePage = () => {
     return (
+        <div className='home-page-container'>
         <ThemeProvider theme={theme}>
-            <AppBar className='topMenuBar' position="fixed" color='primary'>
-                <Toolbar>
-                <Typography margin-right={5} className="appbar-button" variant="h2" color={'white'}>
-                    CureAI
-                </Typography>
-                <Box margin={1}> {/* Adjust the margin value as needed */}
-                    <Link to="/" style={{ textDecoration: 'none' }}>
-                    <Button variant='contained' color='secondary'>
-                        <Typography color={'white'}>Home</Typography>
-                    </Button>
-                    </Link>
-                </Box>
-                <Box margin={1}>
-                    <Link to="/cure-ai" style={{ textDecoration: 'none' }}>
-                    <Button variant='contained' color='secondary'>
-                        <Typography color={'white'}>CURE AI</Typography>
-                    </Button>
-                    </Link>
-                </Box>
-                <Box margin={1}>
-                    <Link to="/diagnosis-page" style={{ textDecoration: 'none' }}>
-                    <Button variant='contained' color='secondary'>
-                        <Typography color={'white'}>Diagnose</Typography>
-                    </Button>
-                    </Link>
-                </Box>
-                </Toolbar>
-            </AppBar>
-            <div className='page'>
-                <Container className='page-content'>
+            {menu}
+            <div className='home-page'>
+                <Container className='home-page-content'>
                     <div className='content-box'>
                         <Typography variant="h2" fontWeight={'bold'} gutterBottom>Introducing CureAI.</Typography>
                         <Typography variant="h3" fontWeight={'bold'} gutterBottom>Your Health and Wellness Companion.</Typography>
@@ -48,52 +26,88 @@ const HomePage = () => {
                             reducing both cost and wait time associated with traditional doctor visits. Embodying a commitment to precision and accessibility,
                             CureAI stands as a beacon of progress in the pursuit of a healthier, more informed world. 
                         </Typography>
-                        <Typography fontSize={24} fontWeight={'bold'} paragraph>
-                            Try CureAI's Chat Assistant Today!
-                        </Typography>
                     </div>
                     
                     <div className='content-box'>
-                        <Typography variant="h4" fontWeight={'bold'} gutterBottom>
-                            Meet Our Founder
+                        <Typography variant="h3" fontWeight={'bold'} gutterBottom>
+                            A Message From the Founder
                         </Typography>
-                        <Typography fontSize={20} paragraph>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
-                        1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but 
-                        also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets 
-                        containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        <Typography fontSize={20}>
+                        I am thrilled to welcolme you to the transformative world of CureAI. CureAI stands at the forefront of a healthcare revolution, harnessing the immense potential of 
+                        cutting-edge OpenAI technology. Our mission is clear: to empower individuals with instant access to reliable information, transcending the traditional barriers of cost and wait time associated with conventional doctor visits.<br></br><br></br> 
+                        At CureAI, we are dedicated to precision and accessibility, ensuring that healthcare is not a privilege, but a fundamental right for all. In this pursuit, CureAI serves as a beacon of progress, 
+                        illuminating the path toward a healthier, more informed world. Together, let us forge ahead on this journey of innovation and compassion, revolutionizing healthcare for the betterment of humanity.
+                        Welcome to CureAI. Welcome to a future of possibility and empowerment.<br></br><br></br>
                         </Typography>
+                        <Typography fontSize={24}>- Michael Gu, Founder/CEO</Typography>
                     </div>
                     <div className='content-box'>
-                        <Typography variant="h4" fontWeight={'bold'} gutterBottom>
+                        <Typography variant="h3" fontWeight={'bold'} gutterBottom>
                             News and Updates
                         </Typography>
-                        <Grid container spacing={2}>
-                            {[1, 2, 3].map((number) => (
-                            <Grid item xs={12} sm={4} key={number}>
-                                <Card className="team-card">
+                        <Grid container>
+                            <Grid item xs={12} sm={4} className='team-grid'>
+                                <Card className="news-card">
                                 <CardMedia
                                     component="img"
-                                    height="140"
-                                    image={`https://via.placeholder.com/300x140?text=Image+${number}`}
-                                    alt={`News #${number}`}
+                                    height="200"
+                                    image={pfp}
+                                    alt={`News #1`}
                                 />
                                 <CardContent>
-                                    <Typography variant="h6" component="div">
-                                    News Article #{number}
+                                    <Typography fontSize={26} fontWeight={'bold'} color={'#00355e'} gutterBottom>
+                                    Meet the Founder
                                     </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                    Write a brief description about the news update here.
+                                    <Typography fontSize={18} color={'#00355e'}>
+                                        I'm Michael Gu, the founder of CureAI. See my work and latest updates below! <br></br>
+                                        Website: <a href="https://michael-gu.github.io/website/" target="_blank" rel="noopener noreferrer">Link</a>
                                     </Typography>
                                 </CardContent>
                                 </Card>
                             </Grid>
-                            ))}
+                            <Grid item xs={12} sm={4} className='team-grid'>
+                                <Card className="news-card">
+                                    <CardMedia
+                                        component="img"
+                                        height="200"
+                                        image={veloxLogo}
+                                        alt={`News #2`}
+                                    />
+                                    <CardContent>
+                                        <Typography fontSize={26} fontWeight={'bold'} color={'#00355e'} gutterBottom>
+                                            Project: Velox Solutions
+                                        </Typography>
+                                        <Typography fontSize={18} color={'#00355e'}>
+                                            Velox is a tech solution that aims to disrupt and revitalize customer service communications via streamlined, fully automated customer support backed by new AI capabilities, language processing, and calling functions.
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+                            </Grid>
+                            <Grid item xs={12} sm={4} className='team-grid'>
+                                <Card className="news-card">
+                                    <CardMedia
+                                        component="img"
+                                        height="200"
+                                        image={trailblazerLogo}
+                                        alt={`News #3`}
+                                    />
+                                    <CardContent>
+                                        <Typography fontSize={26} fontWeight={'bold'} color={'#00355e'} gutterBottom>
+                                        Project: Trailblazer
+                                        </Typography>
+                                        <Typography fontSize={18} color={'#00355e'}>
+                                        Trailblazer is an iOS native app that is changing the way outdoor communities connect. Utilizing our self-developed trail recording system, people and trailblazers can create and share their adventures, contributing to a community-developed trailmap. Our potential lies only in the limitations of what our trailblazers can imagine!
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+                            </Grid>
                         </Grid>
                     </div>
                 </Container>
             </div>
         </ThemeProvider>
+        {footer}
+        </div>
     );
 }
 

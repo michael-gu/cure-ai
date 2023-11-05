@@ -6,10 +6,10 @@ const theme = createTheme({
     },
     palette: {
       primary: {
-        main: '#006BBB', // Your primary color
+        main: '#000000', // Your primary color
       },
       secondary: {
-        main: '#30A0E0', // Your secondary color
+        main: '#161618', // Your secondary color
       },
       tertiary: {
         main: '#FFC872', // Your secondary color
@@ -17,6 +17,9 @@ const theme = createTheme({
       quarternary: {
         main: '#FFE3B3', // Your secondary color
       },
+      button: {
+        main: '#00000F'
+      }
     },
   });
 

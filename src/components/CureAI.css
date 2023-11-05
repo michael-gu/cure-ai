@@ -1,18 +1,69 @@
-.page {
-  background-color: aliceblue;
+.chat-page-container {
+  background: hsla(0, 0%, 0%, 1);
+
+  background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(204, 75%, 34%, 1) 100%);
+
+  background: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(204, 75%, 34%, 1) 100%);
+
+  background: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(204, 75%, 34%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#156296", GradientType=1 );
   
-  padding: 40px;
+  padding: 0px;
+  margin: 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 4px solid pink; */
 }
 
-.chatbot-container {
+.chat-page {
+  /* border: 3px solid yellow; */
+  margin-top: 10vh;
+  margin-bottom: 2vh;
+  width: 70vw;
+  /* background: #121212; */
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chat-page-header {
+  /* border: 4px solid white;   */
+  border-radius: 10px;
+  margin: 40px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.curie-container {
+  /* border: 2px solid green; */
+  padding: 10px 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.curie-chatbox-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px;
+    margin-right: 20px;
     height: 100%;
-    width: 550px;
-    border: 5px solid rgb(214, 214, 214);
+    width: 70%;
+    /* border: 2px solid orange; */
+    background: white;
+    opacity: 0.9;
+    border-radius: 20px;
 }
 
 .content-container {
@@ -21,45 +72,53 @@
   justify-content: center;
 }
   
-.chatbox {
+.curie-chatbox {
   padding: 15px;
   height: 500px;
   overflow-y: scroll;
-  width: 500px; /* Set a fixed width for the chatbox */
+  width: 95%; /* Set a fixed width for the chatbox */
   flex-grow: 1;
 }
   
-  .message-container {
-    margin-bottom: 10px;
-  }
-  
-  .message {
-    margin-bottom: 5px;
-  }
-  
-  .input-container {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    width: 500px;
-    flex-grow: 0;
-  }
-  
-  .input-field {
-    flex: 1;
-    padding: 5px;
-    margin-right: 5px;
-  }
+.message-container {
+  margin-bottom: 10px;
+  color: black;
+  opacity: 0.9;
+}
 
-  .try-content {
-      color: #00355e;
-      padding: 15px;
-      margin: 10px;
-      text-align: center;
-  }
+.message {
+  margin-bottom: 5px;
+}
 
-  #chatbot-tips {
-    margin-left: 80px;
-    padding: 20px;
-    width: 500px;
-  }
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  width: 95%;
+  flex-grow: 0;
+}
+
+.input-field {
+  flex: 1;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.curie-information {
+  /* border: 2px solid red; */
+  margin-left: 20px;
+  padding: 30px;
+  width: 30%;
+  color: white;
+  opacity: 0.9;
+  background-color: #212124;
+  border-radius: 20px;
+}
+
+.chat-faqs {
+  color: white;
+  opacity: 0.9;
+  margin-top: 30px;
+  padding: 20px;
+  width: 50%;
+}
