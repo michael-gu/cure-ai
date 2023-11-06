@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/cure-ai/static/css/main.404cf782.css",
-    "main.js": "/cure-ai/static/js/main.47ad0507.js",
-    "static/js/787.62b4143e.chunk.js": "/cure-ai/static/js/787.62b4143e.chunk.js",
+    "main.css": "/cure-ai/static/css/main.4565cf11.css",
+    "main.js": "/cure-ai/static/js/main.dc216c05.js",
+    "static/js/787.6de41511.chunk.js": "/cure-ai/static/js/787.6de41511.chunk.js",
+    "static/media/bkgd.jpg": "/cure-ai/static/media/bkgd.a8b33460fbd6b1bddb3f.jpg",
+    "static/media/pfp.jpg": "/cure-ai/static/media/pfp.584432abf18ddaaf3a15.jpg",
+    "static/media/velox_logo.png": "/cure-ai/static/media/velox_logo.c080b21d43726a5b9926.png",
+    "static/media/trailblazer_logo.PNG": "/cure-ai/static/media/trailblazer_logo.b218e564e08b46e44d2c.PNG",
     "index.html": "/cure-ai/index.html",
-    "main.404cf782.css.map": "/cure-ai/static/css/main.404cf782.css.map",
-    "main.47ad0507.js.map": "/cure-ai/static/js/main.47ad0507.js.map",
-    "787.62b4143e.chunk.js.map": "/cure-ai/static/js/787.62b4143e.chunk.js.map"
+    "main.4565cf11.css.map": "/cure-ai/static/css/main.4565cf11.css.map",
+    "main.dc216c05.js.map": "/cure-ai/static/js/main.dc216c05.js.map",
+    "787.6de41511.chunk.js.map": "/cure-ai/static/js/787.6de41511.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.404cf782.css",
-    "static/js/main.47ad0507.js"
+    "static/css/main.4565cf11.css",
+    "static/js/main.dc216c05.js"
   ]
 }
