@@ -20,7 +20,7 @@ const CureAIApp = () => {
         setMessages(prevMessages => [...prevMessages, { text: userInput, sender: 'You' }]);
         setInputValue('');
   
-        fetch(`http://localhost:8080/get-curie-response?input=${encodeURIComponent(userInput)}&tokens=${400}`)
+        fetch(`http://cure-ai-api.herokuapp.com/get-curie-response?input=${encodeURIComponent(userInput)}&tokens=${400}`)
           .then(response => response.text())
           .then(data => {
             setMessages(prevMessages => [...prevMessages, { text: data, sender: 'Curie' }]);
