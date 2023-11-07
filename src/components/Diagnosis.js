@@ -44,9 +44,8 @@ const DiagnosisApp = () => {
             const data2 = await response2.text();
             await setSummary(data2);
           
-            const diagnosticData = `How to treat ${data1} or alleviate it's symptoms?`;
-            //console.log(diagnosticData); // Ensure that `diseaseResponse` is being used here
-            const response3 = await fetch(`https://tranquil-savannah-00376-c1488b304c95.herokuapp.com/get-curie-response?input=${encodeURIComponent(diagnosticData)}&tokens=300`);
+            const diagnosticData = `How to alleviate symptoms or treat ${diagnosis}?`;
+            const response3 = await fetch(`https://tranquil-savannah-00376-c1488b304c95.herokuapp.com/get-curie-response?input=${encodeURIComponent(diagnosticData)}&tokens=200`);
             const data3 = await response3.text();
             await setTreatment(data3);
             handleClickScroll();
