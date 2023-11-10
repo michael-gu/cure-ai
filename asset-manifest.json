@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cure-ai/static/css/main.4565cf11.css",
-    "main.js": "/cure-ai/static/js/main.1ad799ff.js",
+    "main.js": "/cure-ai/static/js/main.ceb3b651.js",
     "static/js/787.6de41511.chunk.js": "/cure-ai/static/js/787.6de41511.chunk.js",
     "static/media/bkgd.jpg": "/cure-ai/static/media/bkgd.a8b33460fbd6b1bddb3f.jpg",
     "static/media/pfp.jpg": "/cure-ai/static/media/pfp.584432abf18ddaaf3a15.jpg",
@@ -9,11 +9,11 @@
     "static/media/trailblazer_logo.PNG": "/cure-ai/static/media/trailblazer_logo.b218e564e08b46e44d2c.PNG",
     "index.html": "/cure-ai/index.html",
     "main.4565cf11.css.map": "/cure-ai/static/css/main.4565cf11.css.map",
-    "main.1ad799ff.js.map": "/cure-ai/static/js/main.1ad799ff.js.map",
+    "main.ceb3b651.js.map": "/cure-ai/static/js/main.ceb3b651.js.map",
     "787.6de41511.chunk.js.map": "/cure-ai/static/js/787.6de41511.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4565cf11.css",
-    "static/js/main.1ad799ff.js"
+    "static/js/main.ceb3b651.js"
   ]
 }
