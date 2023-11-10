@@ -35,17 +35,17 @@ const DiagnosisApp = () => {
         e.preventDefault();
         setProcessing(true);
         try {
-            const response1 = await fetch(`https://tranquil-savannah-00376-c1488b304c95.herokuapp.com/get-diagnosis?age=${age}&symptoms=${encodeURIComponent(symptoms)}`);
+            const response1 = await fetch(`https://cure-ai-api-c90e863a04e8.herokuapp.com/get-diagnosis?age=${age}&symptoms=${encodeURIComponent(symptoms)}`);
             const data1 = await response1.text();
             await setDiagnosisResponse(data1);
             
             const diseaseData = `What is ${data1}?`;
-            const response2 = await fetch(`https://tranquil-savannah-00376-c1488b304c95.herokuapp.com/get-curie-response?input=${encodeURIComponent(diseaseData)}&tokens=300`);
+            const response2 = await fetch(`https://cure-ai-api-c90e863a04e8.herokuapp.com/get-curie-response?input=${encodeURIComponent(diseaseData)}&tokens=300`);
             const data2 = await response2.text();
             await setSummary(data2);
           
             const diagnosticData = `How to alleviate symptoms or treat ${diagnosis}?`;
-            const response3 = await fetch(`https://tranquil-savannah-00376-c1488b304c95.herokuapp.com/get-curie-response?input=${encodeURIComponent(diagnosticData)}&tokens=200`);
+            const response3 = await fetch(`https://cure-ai-api-c90e863a04e8.herokuapp.com/get-curie-response?input=${encodeURIComponent(diagnosticData)}&tokens=200`);
             const data3 = await response3.text();
             await setTreatment(data3);
             handleClickScroll();
